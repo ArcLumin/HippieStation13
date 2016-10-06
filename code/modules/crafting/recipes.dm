@@ -69,8 +69,7 @@
 				/obj/item/stack/cable_coil = 5,
 				/obj/item/weapon/gun/energy/gun/advtaser = 1,
 				/obj/item/weapon/stock_parts/cell = 1,
-				/obj/item/device/assembly/prox_sensor = 1,
-				/obj/item/robot_parts/r_arm = 1)
+				/obj/item/device/assembly/prox_sensor = 1)
 	tools = list(/obj/item/weapon/weldingtool, /obj/item/weapon/screwdriver)
 	time = 120
 	category = CAT_ROBOT
@@ -272,4 +271,13 @@
 	tools = list(/obj/item/weapon/weldingtool)
 	reqs = list(/obj/item/stack/sheet/metal = 1)
 	time = 120
+	category = CAT_WEAPON
+
+/datum/table_recipe/tooth_hatchet //For teeth hatchet
+	name = "Tooth hatchet"
+	result = /obj/item/weapon/hatchet/tooth
+	reqs = list(/obj/item/stack/rods = 1,
+				/obj/item/stack/cable_coil = 10,
+				/obj/item/stack/teeth = 3)
+	time = 80
 	category = CAT_WEAPON
